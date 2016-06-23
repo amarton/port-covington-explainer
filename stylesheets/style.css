@@ -1,0 +1,307 @@
+
+/* Generic fix */
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+
+
+/* Ad */
+
+#leaderboard {
+  height: 90px;
+  width: 728px;
+  margin: 20px auto;
+  text-align: center;
+  margin-top:100px; }
+
+
+#cube {
+  height: 250px;
+  width: 300px;
+  background-color: #222222;
+  margin: 20px auto;
+  text-align: center; }
+  
+#smallad {
+  height: 50px;
+  width: 320px;
+  background-color: #222222;
+  margin: 20px auto;
+  text-align: center; }
+ 
+@media (max-width: 735px) {
+  #leaderboard  {
+    display: none;
+  }
+}
+
+@media (min-width: 735px) {
+  #smallad  {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  #smallad  {
+    display: none;
+  }
+}
+
+
+/* Tophat */
+
+#tophat {
+  height: 40px;
+  background-color: #F0F0F0;
+  overflow: hidden; }
+
+#logo {
+  width: 250px;
+  height: 100%;
+  float: left;
+  line-height: 43px;
+  vertical-align: middle; }
+  #logo img {
+    margin: 0 10px;
+    width: 90%; }
+  @media (max-width: 400px) {
+    #logo {
+      width: 200px; } }
+
+.tophat-share-tools {
+  float: right;
+  height: 100%;
+  line-height: 35px;
+  font-size: 24px;
+  vertical-align: middle;
+  color: #333333;
+  margin: 0 10px;
+  text-align: center; }
+  .tophat-share-tools span {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 8px; }
+    .tophat-share-tools span:hover {
+      color: #962D3E; } /* Accent color */
+  @media (max-width: 760px) {
+    .tophat-share-tools {
+      font-size: 18px; } }
+
+
+
+
+/* Social */
+
+
+#social-icons {
+  width:100px;
+  margin: 0 auto;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
+.icon-twitter, .icon-facebook {
+  margin-right:10px;
+  font-size:2em;
+  color:#3b7ea4;
+  cursor: pointer;
+
+}
+
+.icon-twitter:hover, .icon-facebook:hover {
+  color:#cdcdcd;
+
+}
+
+
+
+/* Body */
+
+.container {
+  padding-top:50px;
+  width:100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1em;
+  line-height: 160%;
+  margin-left: 15px;
+}
+
+.biggen {
+  font-size: 110%;
+  color: #3b7ea4;
+  font-weight: bold;
+}
+
+.inset {
+  padding-left:15px;
+}
+
+
+.full-width-image {
+    width:100%;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+.byline {
+  font-size:1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top {
+  padding-top: 50px;
+}
+
+.end {
+  padding-bottom: 300px;
+}
+
+.full-width-image em {
+  font-size: .75em;
+  line-height: 100%;
+}
+
+.caption {
+    font-size: .85em;
+  line-height: 100%;
+}
+
+.pullquote {
+  margin: 0 auto;
+  padding:10px;
+  font-size: 2em;
+  width:90%;
+  max-width:700px;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  line-height: 160%;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  font-family: Montserrat,verdana,sans-serif;
+  color:#3b7ea4;
+}
+
+.speaker {
+  font-size: .5em;
+  font-style: italic;
+  float:right;
+  font-weight: normal;
+  color:#000;
+}
+
+/* Text Styles & Links */
+
+h3, h4, p, li {
+  font-family: lato,verdana,sans-serif;
+}
+
+
+
+h1 {
+  font-family: Montserrat,verdana,sans-serif;
+  font-size:4em;
+  font-weight:bold;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 120%;
+    color:#3b7ea4;
+
+}
+
+h2 {
+  font-size:1.5em;
+  font-weight:bold;
+  font-family: Montserrat,verdana,sans-serif;
+  color:#3b7ea4;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size:1.5em;
+  font-weight: bold;
+  color:#999;
+  line-height: 130%;
+  padding-top: 10px;
+}
+
+h3.subhead {
+  font-family: Montserrat,verdana,sans-serif;
+  text-align: center;
+
+}
+
+h4 {
+  font-size:1.15em;
+  font-weight:bold;
+
+}
+
+p {
+  font-size:1.15em;
+  line-height: 160%;
+}
+
+
+a:link, a:visited {
+  font-size: 1.25em;
+  color: #3b7ea4;
+  text-decoration: none; 
+}
+
+a:hover {
+  color:#cdcdcd;  
+}
+
+
+@media (max-width: 500px) {
+  h1  {
+    font-size: 2em;
+    line-height: normal;
+  }
+
+  h3  {
+    font-size: 1.25em;
+
+  }
+
+.parallax-window {
+    min-height: 300px;
+}
+
+.pullquote, .speaker {
+  font-size: 1em;
+}
+
+}
+
+
+/* Clearfix */
+
+.group:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+
+* html .group {
+  zoom: 1; }
+
+*:first-child + html .group {
+  zoom: 1; }
